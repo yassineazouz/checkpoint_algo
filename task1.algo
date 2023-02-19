@@ -1,0 +1,38 @@
+ALGORITHM algorithm_name
+VAR
+    word_count, vowel_count, character_count : INTEGER 
+BEGIN
+word_count = 0
+vowel_count = 0
+character_count = 0
+
+sentence = read("Enter a sentence:")
+  FOR i FROM 0 TO length(ch)-1  STEP 1  DO
+   
+
+    ccharacter = sentence[i]
+    character_count = character_count + 1
+
+    # Check if the current character is a space or a point
+    if character = ' ' then
+        word_count = word_count + 1
+    end if
+    if character = '.' then
+        break
+    end if
+
+    # Check if the current character is a vowel
+    if character in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'] then
+        vowel_count = vowel_count + 1
+    end if
+  END_FOR
+
+  word_count = word_count + 1
+
+write("The number of words in the sentence is: ", word_count)
+write("The number of vowels in the sentence is: ", vowel_count)
+    
+END
+
+Read(num1)
+w

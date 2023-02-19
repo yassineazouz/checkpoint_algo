@@ -1,0 +1,26 @@
+
+
+
+ALGORITHM task2
+VAR
+    set1, set2 : set of integers
+    sum : integer
+BEGIN
+    sum = 0 ;
+
+    for element in set1 do
+    
+    if not element in set2 then
+    sum = sum + element
+    
+    end if
+    end for
+
+    for element in set2 do
+    
+    if not element in set1 then
+        sum = sum + element
+    end if
+    end for
+    write("The sum of all distinct elements is: ", sum)
+END
